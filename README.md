@@ -1,4 +1,4 @@
-[Assessment 1]() | [Assessment 2]() | [Assessment 3]() |
+[Assessment 1]() | [Assessment 2](https://sabiewasabi.github.io/CART211/assessment2/) | [Assessment 3]() |
 
 # Sabrina Rath's CART211 onestop
 This is my onestop website for Brad Todd’s course in CART211
