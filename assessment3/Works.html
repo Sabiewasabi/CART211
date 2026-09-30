@@ -34,41 +34,49 @@
     <!--Main wrapper-->
     <div id="wrapper">
         <header>
-            <img src="assets/Home.jpg" alt="Portrait of Ocean Vuong">
+
+            <!-- Eager loads everything at once, lazy loads images only when you are near an upcoming image on pages-->
+            <img src="assets/work.jpg" alt="Ocean Vuong" loading="lazy">
             <h1>Ocean Vuong</h1>
+            <h2>Literary Success</h2>
         </header>
 
+
         <!--Main content-->
-
-        <main>
+        <section>
             <article>
-                <p>
-                    Ocean Vuong, born in 1988 in Ho Chi Minh City (Vietnam), is a Vietnamese American poet, novelist,
-                    and
-                    professor. He
-                    emigrated to the United States with his family in 1990 and grew up in Connecticut.</p>
+                <div class="books">
+                    <figure>
+                        <img src="assets/Emperor.jpg" alt="The Emperor of Gladness" loading="lazy">
+                        <figcaption>The Emperor of Gladness</figcaption>
+                    </figure>
 
-                <p>
-                    Author of the critically acclaimed poetry collections <em>Night Sky with Exit Wounds</em> and
-                    <em>Time Is a
-                        Mother</em>,
-                    as well as the
-                    <em>New York Times</em> bestselling novel On Earth We’re Briefly Gorgeous. A recipient of the
-                    MacArthur
-                    Fellowship and the
-                    American Book Award, he once worked, which inspired The Emperor of Gladness. Born in Saigon,
-                    Vietnam, he
-                    currently
-                    splits his time between Northampton, Massachusetts, and New York City.
-                </p>
+                    <figure>
+                        <img src="assets/Earth.jpg" alt="On Earth We're Briefly Gorgeous: A Novel" loading="lazy">
+                        <figcaption>On Earth We're Briefly Gorgeous: A Novel</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="assets/Mother.jpg" alt="Time Is a Mother" loading="lazy">
+                        <figcaption>Time Is a Mother</figcaption>
+                    </figure>
+
+
+
+                </div>
+
 
             </article>
+        </section>
+
         </main>
 
         <!--Footer-->
         <footer>
             <small><em>This website is created as part of a school project. All content and design are copyright.
                     Sabrina Rath,student,2026</em></small>
+
+
         </footer>
     </div>
 </body>

@@ -1,0 +1,69 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    margin-top: 50px;
+    margin-left: 50px;
+    float: left;
+    width: 4%;
+    line-height: 20px;
+    position: fixed;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+}
+
+#wrapper {
+    margin-top: 50px;
+    float: right;
+    width: 60%;
+    margin-right: 50px;
+}
+
+header h1 {
+    text-align: right;
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: rgb(1, 118, 112);
+}
+
+header h2 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-align: right;
+    font-size: 20px;
+    color: darkgray;
+}
+
+header h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 20px;
+    color: darkgray;
+}
+
+section {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+article h3 {
+    margin-bottom: 10px;
+    color: darkslategray;
+}
+
+footer {
+    margin-top: 30px;
+    min-height: 30px;
+    font-size: 15px;
+    font-weight: lighter;
+    color: darkslategray;
+    text-align: right;
+    font-style: italic;
+}
