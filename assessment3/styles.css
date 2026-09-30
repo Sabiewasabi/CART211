@@ -63,6 +63,7 @@ article h3 {
     grid-template-columns: auto auto auto;
     max-width: 100%;
     height: auto;
+    gap: 16px;
 
 }
 
@@ -70,6 +71,11 @@ article h3 {
     display: block;
     width: 100%;
     height: auto;
+}
+
+.books figure {
+    margin: 0%;
+
 }
 
 footer {
