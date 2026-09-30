@@ -19,6 +19,10 @@ nav a {
     display: block;
 }
 
+nav a:hover {
+    color: rgb(1, 118, 112);
+}
+
 #wrapper {
     margin-top: 50px;
     float: right;
@@ -38,7 +42,7 @@ header h2 {
     margin-bottom: 30px;
     text-align: right;
     font-size: 20px;
-    color: darkgray;
+    color: rgba(169, 169, 169, 0.613);
 }
 
 header h3 {
@@ -46,7 +50,12 @@ header h3 {
     margin-bottom: 10px;
     text-align: left;
     font-size: 20px;
-    color: darkgray;
+    color: rgba(169, 169, 169, 0.325);
+}
+
+header img {
+    width: 100%;
+    height: 100%;
 }
 
 section {
