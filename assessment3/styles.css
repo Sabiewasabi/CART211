@@ -129,7 +129,7 @@ footer a {
     color: black;
 }
 
-/* TABLET UP TO 900PX */
+/* TABLET UP TO 900px */
 @media (max-width: 900px) {
 
     #wrapper {
@@ -147,7 +147,7 @@ footer a {
     }
 }
 
-/* MOBILE */
+/* MOBILE UP TO 600px */
 @media (max-width: 600px) {
 
     /* Navigation becomes a normal horizontal mobile bar */
@@ -165,8 +165,40 @@ footer a {
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
+
+        line-height: 30px;
+
+        background-color: rgb(124, 208, 208);
+        border-bottom: 4px solid;
+
+        /* Put our content on top of everything else */
+        z-index: 1000;
     }
 
+    nav a {
+        color: white;
+    }
 
+    nav #hover {
+        color: darkslategray
+    }
 
+    /* Devices that actually support hover */
+    @media (hover: hover) {
+        nav a:hover {
+            color: darkslategray;
+        }
+    }
+
+    /* Touch interaction */
+    nav a:active {
+        color: darkslategray;
+    }
+
+    /* MAIN CONTENT */
+    #wrapper {
+        width: 92%;
+        margin: 0, auto;
+        float: none;
+    }
 }
