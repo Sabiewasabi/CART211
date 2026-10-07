@@ -1,5 +1,5 @@
 # Sabrina Rath's CART211 onestop
-This is my onestop website for Brad Todd’s course in CART211
+This is my onestop website for Brad Todd’s course repository in CART211
 
 ![Banner](/banner.png)
 
