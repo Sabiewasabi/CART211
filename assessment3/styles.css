@@ -223,4 +223,29 @@ footer a {
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
+
+    footer {
+        margin-top: 40px;
+        font-size: 12px;
+    }
+}
+
+/* VERY SMALL PHONES UP TO 400px */
+@media(max-width: 400px) {
+
+    nav {
+        padding: 8px, 0;
+    }
+
+    #wrapper {
+        width: 94%;
+    }
+
+    .books {
+        gap: 12px;
+    }
+
+    article figure figcaption {
+        font-size: 11px;
+    }
 }
