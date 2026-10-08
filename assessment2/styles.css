@@ -1,0 +1,36 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+header,
+main,
+footer {
+    width: 700px;
+    max-width: 100%;
+    margin: auto;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 20px auto;
+}
+
+main a {
+    color: blue;
+}
+
+footer {
+    text-align: right;
+}
