@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakground Video</title>
+    <title>Background Video</title>
 
     <style>
         * {
@@ -26,6 +26,33 @@
             left: 0;
             width: 100%;
             height: 100%;
+            object-fit: cover;
+            object-position: center;
+            /* z-index; : manages layer hiearchy */
+            z-index: -1;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* RBGA, a is alpha = controls opacity/darkness/lightness */
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 0;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            padding: 20px;
         }
     </style>
 
