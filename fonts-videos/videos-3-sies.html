@@ -53,12 +53,36 @@
         video.large {
             width: 720px;
         }
+
+        /* Full size video */
+        video.full {
+            width: 100%;
+        }
     </style>
 
 
 </head>
 
 <body>
+    <h1>Snowy Video</h1>
+    <p>Watch this amazing snowy video below!</p>
+
+    <!-- Video size control buttons -->
+    <div class="size-controls">
+        <button onclick="changeSize(small)"></button>
+        Small
+
+        <button onclick="changeSize(medium)"></button>
+        Medium
+
+        <button onclick="changeSize(Large)"></button>
+        Large
+
+        <button onclick="changeSize(Full)"></button>
+        Fullscreen
+
+    </div>
+
 
 </body>
 
