@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowy Video</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+        }
+
+        .size-controls {
+            margin-bottom: 15pc;
+        }
+
+        .size-controls button {
+            padding: 8px 14px;
+            /*  Adding space between the buttons */
+            margin: 3px;
+            /* Changes cursor to a hand */
+            cursor: pointer;
+        }
+
+        /* General styles */
+        video {
+            display: block;
+            width: 100%;
+            /* This is to prevent the video from exceeding the max width of the page */
+            max-width: 100%;
+            height: auto;
+            background-color: black;
+            /* Makes changes in the video's width appear smoothly */
+            transition: width 0, 3px auto;
+        }
+
+        /* Different video sizes */
+
+        /* Small video of 320px wide */
+        video.small {
+            width: 320px;
+        }
+
+
+        /* Medium video of 480px wide */
+        video.medium {
+            width: 480px;
+        }
+
+        /* Large video of 720 */
+        video.large {
+            width: 720px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
