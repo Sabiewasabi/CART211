@@ -54,13 +54,38 @@
             text-align: center;
             padding: 20px;
         }
-    </style>
 
+        h1 {
+            /* Clamp is a function that takes 3 values clamp(min,pref,max) */
+            /* Rem is a unit based on the root fontsize of the webpage viewport */
+            font-size: clamp(2rem, 5w, 4rem);
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
 
-
 <body>
+    <video class="backgroundvideo" autoplay muted loop playinline aria-hidden="true" tabindex="-1">
+
+        <source src="snow.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay">
+        <main class="content">
+            <h1>Snowy Video ❄️ </h1>
+            <p>Beautiful snowy video</p>
+    </div>
+
+    </main>
+</body>
+
 
 </body>
+
+
 
 </html>
