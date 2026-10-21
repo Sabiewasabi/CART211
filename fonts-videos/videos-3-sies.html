@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snowy Video</title>
-
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,76 +12,68 @@
         }
 
         .size-controls {
-            margin-bottom: 15pc;
+            margin-bottom: 20px;
         }
 
         .size-controls button {
             padding: 8px 14px;
-            /*  Adding space between the buttons */
             margin: 3px;
-            /* Changes cursor to a hand */
             cursor: pointer;
         }
 
-        /* General styles */
         video {
             display: block;
             width: 100%;
-            /* This is to prevent the video from exceeding the max width of the page */
             max-width: 100%;
             height: auto;
             background-color: black;
-            /* Makes changes in the video's width appear smoothly */
-            transition: width 0, 3px auto;
+            transition: width 0.3s ease;
         }
 
-        /* Different video sizes */
-
-        /* Small video of 320px wide */
         video.small {
             width: 320px;
         }
 
-
-        /* Medium video of 480px wide */
         video.medium {
             width: 480px;
         }
 
-        /* Large video of 720 */
         video.large {
             width: 720px;
         }
 
-        /* Full size video */
         video.full {
             width: 100%;
         }
     </style>
-
-
 </head>
 
 <body>
-    <h1>Snowy Video</h1>
+
+    <h1>Snowy Video ❄️</h1>
     <p>Watch this amazing snowy video below!</p>
 
-    <!-- Video size control buttons -->
     <div class="size-controls">
-        <button onclick="changeSize(small)"></button>
-        Small
+        <button onclick="changeSize('small')">Small</button>
+        <button onclick="changeSize('medium')">Medium</button>
+        <button onclick="changeSize('large')">Large</button>
+        <button onclick="changeSize('full')">Fullscreen</button>
 
-        <button onclick="changeSize(medium)"></button>
-        Medium
-
-        <button onclick="changeSize(Large)"></button>
-        Large
-
-        <button onclick="changeSize(Full)"></button>
-        Fullscreen
-
+        <video id="myvideo" class="full" controls>
+            <source src="snow.mp4" type="video/mp4">
+            Sorry, your browser cannot load this video.
+        </video>
     </div>
 
+    <script>
+        function changeSize(size) {
+            const video = document.getElementById("myvideo");
+            // Remove all size classes
+            video.classList.remove("small", "medium", "large", "full");
+            // Add the selected size class
+            video.classList.add(size);
+        }
+    </script>
 
 </body>
 
