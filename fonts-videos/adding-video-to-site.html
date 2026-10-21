@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video In Website</title>
+
+    <style>
+        /* Styles the entire website */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+        }
+
+        /* Styles the video player */
+        video {
+            /* PLaces video in its own block */
+            display: block;
+            /* Taking up all the available space */
+            width: 100%;
+            /* Aspect ratio fullscreen video size */
+            aspect-ratio: 16/9;
+            height: auto;
+            /* Display black rectangle as video loads in */
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Video In Website</h1>
+
+    <p>Watch the video below!</p>
+
+    <video controls>
+        <source src="snow.mp4" type="">
+        Snowy landscape
+    </video>
+
+</body>
+
+</html>
