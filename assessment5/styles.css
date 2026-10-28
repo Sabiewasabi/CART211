@@ -48,8 +48,7 @@ body {
 }
 
 /* REVEAL THE TEXT WHEN THE FIGURE IS HOVERED OVER */
-.pict figure:hover,
-.hover-text {
+.pict figure:hover .hover-text {
     display: block;
     /* CHANE THE TEXT FROM HIDDEN TO VISIBLE */
 }
