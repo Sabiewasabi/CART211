@@ -32,3 +32,136 @@ body {
     border-radius: 4px;
     white-space: nowrap;
 }
+
+.pict figure:hover.hover-text {
+    display: block;
+}
+
+.pict figure:hover img {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.em:hover {
+    filter: blur(2px);
+    opacity: 0.9;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+/* DESKTOP MENU */
+
+.menu1 {
+    display: flex;
+    background: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu1 a {
+    display: block;
+}
+
+#wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: left;
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 30;
+    text-align: right;
+    font-size: 20px;
+    color: darkgray;
+}
+
+.stories.titlt {
+    text-align: right;
+    font-size: 3em;
+}
+
+.intro {
+    text-align: right;
+    margin-bottom: 10px;
+    text-align: justify;
+
+}
+
+header h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 20px;
+    color: darkgray;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: ;
+    align-items: center;
+    font-size: 2em;
+    margin-top: 50px;
+
+}
+
+.logo {
+    text-align: left;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.menu1 {
+    text-align: right;
+}
+
+.menu1_active {
+    text-align: right;
+    color: gray;
+}
+
+section {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+article p:last-child {
+    margin-bottom: 80px;
+}
+
+article h3 {
+    margin-bottom: 10px;
+    color: darkgray;
+}
+
+footer {
+    margin-top: 20px;
+    min-height: 30px;
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: right;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.pict {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
