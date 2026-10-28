@@ -90,7 +90,6 @@ h2 {
     text-align: right;
     margin-bottom: 10px;
     text-align: justify;
-
 }
 
 header h3 {
@@ -103,7 +102,7 @@ header h3 {
 
 nav {
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns: 60% 1fr;
     align-items: center;
     font-size: 2em;
     margin-top: 50px;
@@ -164,4 +163,13 @@ footer a {
 .pict {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.im {
+    width: 100px;
+    height: auto;
+    aspect-ratio: 1 / 1;
 }
