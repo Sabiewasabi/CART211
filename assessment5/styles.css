@@ -1,12 +1,14 @@
 body {
-    font-family: 'Roboto', 'Inter', sans-serif;
-    font-weight: 900;
-    font-size: 1em;
+    font-family: 'Playfair Display', 'Georgia', serif;
+    font-weight: 800;
+    font-size: 1rem;
     /* USE THE DEFAULT SIZE AS THE REFERENCE SIZE */
     padding: 0;
     /* REMOVE THE INNER SACING AROUND THE PAGE */
     margin: 0;
     /* REMOVE THE BROWSER'S DEFAULT OUTER PAGE MARGINS */
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 /* IMAGE HOVER EFFECTS */
@@ -20,14 +22,14 @@ body {
     /* ALLOWS FIGURES TO SIT ALONGSIDE EACH OTHER */
     cursor: pointer;
     /* SHOW A HAND CURSOR WHEN HOVERING OVER THE FIGURE */
+    overflow: hidden;
 }
 
 /* MAKE IMAGES FILL AVAILABLE WIDTH */
 .pict img {
     width: 100%;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.4s ease;
     /* ANIMATE ZOOM AND TRANSPARENCY CHANGES OVER 0.3S */
-
 }
 
 /* HIDE THE TEXT UNTIL THE IMAGE IS HOVERED OVER */
@@ -36,15 +38,17 @@ body {
     display: none;
     position: absolute;
     /* ALLOWS THE TEXT TO SIT ON TOP OF THE IMAGE */
-    bottom: 30px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 25px;
+    left: 15px;
+    background-color: rgba(18, 18, 18, 0.85);
     /* USES A BLACK BG WITH 70% OPACITY */
-    color: white;
-    padding: 8px;
-    border-radius: 4px;
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 6px;
     white-space: nowrap;
     /* KEEP THE TEXT ON ONE LINE */
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
 }
 
 /* REVEAL THE TEXT WHEN THE FIGURE IS HOVERED OVER */
@@ -55,26 +59,29 @@ body {
 
 /* ENLARGES AND SLIGHTLY FADE IMAGES ON HOVER */
 .pict figure:hover img {
-    transform: scale(1.05);
+    transform: scale(1.03);
     /* INCREASE THE IMAGE SIZE BY 5% */
-    opacity: 0.9;
+    opacity: 0.85;
 }
 
 /* APPLY A BLUR AND ZOOM EFFECT TO IMAGES WITH CLASS "im" */
+.im {
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
 .im:hover {
-    filter: blur(2px);
-    opacity: 0.9;
-    transform: scale(1.05);
-    transition: scale(1.05);
-    transition: all 0.3s ease-in-out;
+    filter: blur(4px);
+    opacity: 0.8;
+    transform: scale(1.03);
 }
 
 /* DESKTOP MENU */
 .menu1 {
     display: flex;
-    background: white;
+    background: #1a1a1a;
     justify-content: space-around;
     align-items: center;
+    padding: 15px 0;
 }
 
 .menu1 a {
@@ -84,42 +91,47 @@ body {
 /* MAIN CONTENT AND HEADINGS */
 
 #wrapper {
-    width: 90%;
+    width: 88%;
     margin: 0 auto;
     /* CENTER THE CONTAINER HORIZONTALLY */
 }
 
 h1 {
     text-align: left;
-    font-size: 4em;
-    margin-bottom: 1em;
+    font-size: 3.5rem;
+    margin-bottom: 0.8em;
+    color: #ffffff;
+    letter-spacing: -1px;
 }
 
 header h2 {
     margin-top: 0px;
     margin-bottom: 30px;
     text-align: right;
-    font-size: 20px;
-    color: darkgray;
+    font-size: 18px;
+    color: #707070;
 }
 
 .stories-title {
     text-align: right;
-    font-size: 3em;
+    font-size: 2.8rem;
+    color: #ffffff;
 }
 
 .intro {
-    font-size: 2em;
-    margin-bottom: 1em;
+    font-size: 1.75rem;
+    margin-bottom: 1.2em;
     text-align: justify;
+    line-height: 1.4em;
+    color: #b3b3b3;
 }
 
 header h3 {
     margin-top: 0px;
     margin-bottom: 10px;
     text-align: left;
-    font-size: 20px;
-    color: darkgray;
+    font-size: 18px;
+    color: #707070;
 }
 
 /* NAVIGATION BAR */
@@ -130,22 +142,24 @@ nav {
     display: grid;
     grid-template-columns: 60% 1fr;
     align-items: center;
-    font-size: 2em;
-    margin-top: 50px;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .logo {
     text-align: left;
+    color: #ffffff;
 }
 
 nav a {
     text-decoration: none;
-    color: black;
-    font-weight: bold;
+    color: #e0e0e0;
+    font-weight: 700;
 }
 
 nav a:hover {
-    color: darkgray;
+    color: #a8a8a8;
 }
 
 .menu1 {
@@ -154,39 +168,47 @@ nav a:hover {
 
 .menu1_active {
     text-align: right;
-    color: gray;
+    color: #888888;
 }
 
 /* SECTIONS AND ARTICLES */
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-align: justify;
+    line-height: 1.6;
 }
 
 /* SELECT THE LAST PARAGRAPH INSIDE AN ARTICLE */
 article p:last-child {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 article h3 {
-    margin-bottom: 10px;
-    color: darkgray;
+    margin-bottom: 12px;
+    color: #707070;
 }
 
 /* FOOTER */
 footer {
-    margin-top: 20px;
-    min-height: 30px;
-    font-size: 10px;
-    font-weight: lighter;
+    margin-top: 40px;
+    min-height: 40px;
+    font-size: 11px;
+    font-weight: 300;
     text-align: right;
     font-style: italic;
+    color: #555555;
+    border-top: 1px solid #222222;
+    padding-top: 15px;
 }
 
 footer a {
     text-decoration: none;
-    color: black;
+    color: #888888;
+}
+
+footer a:hover {
+    color: #ffffff;
 }
 
 /* DESKTOP IMAGE GRID */
@@ -195,8 +217,8 @@ footer a {
     display: grid;
     /* CREATE 12 EQUALLY SIZED COLUMNS */
     grid-template-columns: repeat(12, 1fr);
-    gap: 0;
-    margin: 0;
+    gap: 12px;
+    margin: 20px 0;
     padding: 0;
 }
 
@@ -211,6 +233,7 @@ footer a {
     /* INCLUDE THE PADDING AND BORDERS IN THE ELEMENT DIMENSIONS */
     display: block;
     /* REMOVE THE EXTRA BASELINE SPACE BETWEEN THE INLINE IMAGES */
+    border-radius: 4px;
 }
 
 /* FIRST AND SECOND ROWS */
