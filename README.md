@@ -12,3 +12,4 @@ This is my onestop website for Brad Todd’s course repository in CART211
 ## 3. [Assessment 3](https://sabiewasabi.github.io/CART211/assessment3/)
 ## 4. [Assessment 4](./mobile_webview.png)
 ## 5. [Assessment 5 & 6](https://sabiewasabi.github.io/CART211/assessment5/)
+## 6. [Final Project](Final%20-project.md)
