@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play a fake person. See what trackers learn. | SpyMeNot</title>
+
+    <meta name="description" content="SpyMeNot is a short game about online tracking. Play a fake person and see what trackers learn.">
+
+    <!-- OPEN GRAPH METADATA CONTROLS HOW THE PAGE LOOKS WHEN SHARED ON SOCIAL MEDIA -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SpyMeNot: Play a fake person. See what trackers learn.">
+    <meta property="og:description" content="SpyMeNot is a short game about online tracking. Play a fake person and see what trackers learn.">
+
+    <!-- THE PAGE URL AND IMAGE USED IN SOCIAL MEDIA PREVIEWS -->
+    <!-- REPLACE THESE ADDRESSES WITH YOUR OWN ONCE THE SITE IS ONLINE -->
+    <meta property="og:url" content="https://YOUR-SITE-ADDRESS/index.html">
+    <meta property="og:image" content="https://YOUR-SITE-ADDRESS/assets/og-image.jpg">
+
+    <!-- THE DIMENSIONS AND ALTERNATIVE DESCRIPTION OF THE PREVIEW IMAGE -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Beebop, a friendly blue monitor robot with a rubber duck on its head">
+
+    <!-- TWITTER CARD METADATA CONTROLS THE APPEARANCE OF SHARED LINKS ON X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SpyMeNot: Play a fake person. See what trackers learn.">
+    <meta name="twitter:description" content="SpyMeNot is a short game about online tracking. Play a fake person and see what trackers learn.">
+    <meta name="twitter:image" content="https://YOUR-SITE-ADDRESS/assets/og-image.jpg">
+
+    <!-- IDENTIFIES THE PREFERRED URL FOR THIS PAGE TO SEARCH ENGINES -->
+    <link rel="canonical" href="https://YOUR-SITE-ADDRESS/index.html">
+
+    <!-- ADDS A SMALL ICON TO THE BROWSER TAB -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+    <!-- IDENTIFIES THE AUTHOR AND COPYRIGHT INFORMATION -->
+    <meta name="author" content="Sabrina Rath">
+    <meta name="copyright" content="Sabrina Rath, student project, response to Zuboff">
+
+    <!-- STYLESHEET LINK -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- LOADS FONT AWESOME, A LIBRARY OF READY-MADE ICONS -->
+    <!-- THE HAMBURGER MENU ICON COMES FROM THIS LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header>
+            <nav>
+                <div class="logo">
+                    <a class="logo-text" href="index.html"><span class="blue">Spy</span><span class="yellow">Me</span><span class="red">Not</span></a>
+                </div>
+
+                <div class="menu1">
+                    <!-- THE X BUTTON CLOSES THE MOBILE NAVIGATION -->
+                    <button type="button" class="close-menu" aria-label="Close Navigation Menu">
+                        &times;
+                    </button>
+
+                    <a href="index.html" class="menuI"> HOME </a>
+                    <a href="why.html" class="menuI"> WHY </a>
+                </div>
+
+                <!-- HAMBURGER BUTTON DISPLAYED ON MOBILE AND TABLET SCREENS -->
+                <div class="hamburger-menu">
+                    <button type="button" aria-label="Open Navigation Menu">
+                        <span class="fa fa-bars" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- SECTION: GROUPS THE MAIN CONTENT OF THE PAGE -->
+        <section>
+            <!-- ARTICLE: CONTAINS ONE PIECE OF WRITTEN AND VISUAL CONTENT -->
+            <article>
+                <h1>Play a fake person. See what trackers learn.</h1>
+
+                <!-- LAYOUT: THE CSS GRID PUTS THE TEXT BOX AND THE IMAGE SIDE BY SIDE -->
+                <div class="layout">
+                    <div class="text-box">
+                        <p><b>SpyMeNot is a short game about online tracking.</b> It looks like a friendly search site, but Beebop the robot is quietly collecting data, the way many real sites do.</p>
+                        <p>Your job is to pretend to be someone else and see what happens:</p>
+                        <ol>
+                            <li>Invent a fake person.</li>
+                            <li>Give them fake hobbies and searches.</li>
+                            <li>See what the trackers think they know.</li>
+                        </ol>
+                        <p class="real"><b>In real life:</b> Many free sites make money by collecting data about you.</p>
+                    </div>
+
+                    <!-- FIGURE: IMAGE AND CAPTION. TO USE YOUR OWN DRAWING, CHANGE THE FILE NAME IN src -->
+                    <figure class="image-box">
+                        <img src="assets/beebop.svg" alt="Beebop, a friendly blue monitor robot with glasses and a rubber duck on its head">
+                        <figcaption>Beebop. Friendly. Trustworthy.</figcaption>
+                    </figure>
+                </div>
+
+                <!-- BOTTOM ROW: SMALL DESCRIPTION AND BUTTONS -->
+                <div class="bottom">
+                    <p class="small-box">Be careful what you click. Not everything here is what it seems.</p>
+                    <div><a class="button main" href="why.html">Start the game</a></div>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <div class="credits">
+                <p>
+                    Copyright Sabrina Rath. SpyMeNot is a response to Shoshana Zuboff's The Age of Surveillance Capitalism. Nothing you type leaves your browser.
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- JAVASCRIPT FOR THE MENU AND THE GHOST FEATURES (SEE SCRIPT.JS) -->
+    <script src="script.js"></script>
+</body>
+
+</html>
