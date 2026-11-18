@@ -1,0 +1,321 @@
+body {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    /* USE THE DEFAULT SIZE AS THE REFERENCE SIZE */
+    line-height: 1.5;
+    padding: 0;
+    /* REMOVE THE INNER SPACING AROUND THE PAGE */
+    margin: 0;
+    /* REMOVE THE BROWSER'S DEFAULT OUTER PAGE MARGINS */
+    background-color: #ffffff;
+    color: #2b2433;
+}
+
+/* MAIN CONTENT AND HEADINGS */
+
+#wrapper {
+    width: 88%;
+    max-width: 60rem;
+    margin: 0 auto;
+    /* CENTER THE CONTAINER HORIZONTALLY */
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 38rem;
+    margin: 1.5rem auto;
+    padding: 0.5rem;
+    border: 2px solid #2b2433;
+    /* THE TITLE BOX FROM THE WIREFRAME */
+}
+
+h2 {
+    font-size: 1.1rem;
+    color: #1f6fb5;
+    margin-top: 0;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    /* FIRST COLUMN: 60% OF THE GRID WIDTH
+        2ND COLUMN: THE REMAINING SPACE AVAILABLE */
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    padding: 0.6rem 1rem;
+    border: 3px solid #2b2433;
+}
+
+.logo {
+    text-align: left;
+}
+
+.logo-text {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.blue {
+    color: #4a9eea;
+}
+
+.yellow {
+    color: #e8a800;
+}
+
+.red {
+    color: #ea4b35;
+}
+
+/* DESKTOP MENU */
+.menu1 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    text-align: right;
+}
+
+.menuI {
+    text-decoration: none;
+    color: #2b2433;
+    font-weight: 500;
+}
+
+.menuI:hover {
+    color: #1f6fb5;
+}
+
+/* THE X BUTTON AND THE HAMBURGER ARE HIDDEN ON BIG SCREENS */
+.close-menu {
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* SECTIONS AND ARTICLES */
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+/* THE REPEATED PAGE LAYOUT (CSS GRID) */
+
+.layout {
+    /* TWO EQUAL COLUMNS: TEXT ON THE LEFT, IMAGE ON THE RIGHT */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.text-box {
+    border: 2px solid #2b2433;
+    padding: 1rem;
+}
+
+.image-box {
+    margin: 0;
+    border: 2px solid #2b2433;
+    padding: 1rem;
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    max-height: 16rem;
+    /* STOP TALL IMAGES FROM GROWING TOO BIG */
+}
+
+.image-box figcaption {
+    font-size: 0.85rem;
+    color: #6b6670;
+}
+
+/* BOTTOM ROW: SMALL DESCRIPTION AND BUTTONS */
+.bottom {
+    display: grid;
+    /* FIRST COLUMN TAKES THE SPACE LEFT, SECOND FITS THE BUTTONS */
+    grid-template-columns: 1fr auto;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.small-box {
+    border: 2px solid #2b2433;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    color: #6b6670;
+    margin: 0;
+}
+
+/* BUTTONS AND SMALL PIECES */
+
+.button,
+button.chip,
+button.ghost-button {
+    display: inline-block;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.6rem 1.1rem;
+    border: 2px solid #2b2433;
+    background-color: #ffffff;
+    color: #2b2433;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover,
+button.chip:hover,
+button.ghost-button:hover {
+    background-color: #f3f1f6;
+}
+
+.main {
+    background-color: #1f6fb5;
+    border-color: #1f6fb5;
+    color: #ffffff;
+}
+
+.main:hover {
+    background-color: #17558c;
+}
+
+.chip.picked {
+    background-color: #e8a800;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.real {
+    background-color: #f3f1f6;
+    border-left: 5px solid #e8a800;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.95rem;
+}
+
+.ad {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: 1px dashed #6b6670;
+    color: #6b6670;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.card {
+    border: 6px solid #e8a800;
+    border-radius: 14px;
+    padding: 0.75rem 1.25rem;
+    text-align: center;
+}
+
+.popup {
+    background-color: #ea4b35;
+    color: #ffffff;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.plain-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 2.5rem;
+    min-height: 2.5rem;
+    font-size: 0.85rem;
+    text-align: center;
+    color: #6b6670;
+    border-top: 2px solid #2b2433;
+    padding-top: 0.75rem;
+}
+
+/* BAD ENDING: A SLOW RED GLOW (GENTLE ON PURPOSE) */
+
+.glow {
+    animation: glow 3s infinite;
+}
+
+@keyframes glow {
+    50% {
+        background-color: #fbd3cd;
+    }
+}
+
+/* TABLET AND MOBILE (SCREENS 800PX WIDE OR LESS) */
+
+@media (max-width: 800px) {
+
+    /* STACK THE TEXT BOX AND THE IMAGE IN ONE COLUMN */
+    .layout,
+    .bottom {
+        grid-template-columns: 1fr;
+    }
+
+    /* THE NAV BECOMES LOGO ON THE LEFT, HAMBURGER ON THE RIGHT */
+    nav {
+        grid-template-columns: 1fr auto;
+    }
+
+    /* HIDE THE NORMAL MENU AND SHOW THE HAMBURGER BUTTON */
+    .menu1 {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-menu button {
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #2b2433;
+    }
+
+    /* WHEN JAVASCRIPT ADDS THE CLASS menu-deployed, THE MENU COVERS THE SCREEN */
+    .menu1.menu-deployed {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.75rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ffffff;
+        z-index: 10;
+        font-size: 1.5rem;
+    }
+
+    .menu1.menu-deployed .close-menu {
+        display: block;
+        position: absolute;
+        top: 0.75rem;
+        right: 1.25rem;
+        font-size: 2.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #2b2433;
+    }
+}
