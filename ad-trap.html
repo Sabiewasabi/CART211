@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You have been selected | SpyMeNot</title>
+
+    <meta name="description" content="A fake ad pop-up and consent banner.">
+
+    <!-- OPEN GRAPH METADATA CONTROLS HOW THE PAGE LOOKS WHEN SHARED ON SOCIAL MEDIA -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SpyMeNot: You have been selected">
+    <meta property="og:description" content="A fake ad pop-up and consent banner.">
+
+    <!-- THE PAGE URL AND IMAGE USED IN SOCIAL MEDIA PREVIEWS -->
+    <meta property="og:url" content="https://sabiewasabi.github.io/CART211/final-project/ad-trap.html">
+    <meta property="og:image" content="https://sabiewasabi.github.io/CART211/final-project/beebop.png">
+
+    <!-- THE DIMENSIONS AND ALTERNATIVE DESCRIPTION OF THE PREVIEW IMAGE -->
+    <meta property="og:image:width" content="2732">
+    <meta property="og:image:height" content="2048">
+    <meta property="og:image:alt" content="Beebop, a friendly blue monitor robot with a rubber duck on its head">
+
+    <!-- TWITTER CARD METADATA CONTROLS THE APPEARANCE OF SHARED LINKS ON X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SpyMeNot: You have been selected">
+    <meta name="twitter:description" content="A fake ad pop-up and consent banner.">
+    <meta name="twitter:image" content="https://sabiewasabi.github.io/CART211/final-project/beebop.png">
+
+    <!-- IDENTIFIES THE PREFERRED URL FOR THIS PAGE TO SEARCH ENGINES -->
+    <link rel="canonical" href="https://sabiewasabi.github.io/CART211/final-project/ad-trap.html">
+
+    <!-- ADDS A SMALL ICON TO THE BROWSER TAB -->
+    <link rel="icon" type="image/x-icon" href="./beebop.ico">
+
+    <!-- IDENTIFIES THE AUTHOR AND COPYRIGHT INFORMATION -->
+    <meta name="author" content="Sabrina Rath">
+    <meta name="copyright" content="Sabrina Rath, student project, response to Zuboff">
+
+    <!-- STYLESHEET LINK -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- LOADS FONT AWESOME, A LIBRARY OF READY-MADE ICONS -->
+    <!-- THE HAMBURGER MENU ICON COMES FROM THIS LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <header>
+            <nav>
+                <div class="logo">
+                    <a class="logo-text" href="index.html"><span class="blue">Spy</span><span
+                            class="yellow">Me</span><span class="red">Not</span></a>
+                </div>
+
+                <div class="menu1">
+                    <!-- THE X BUTTON CLOSES THE MOBILE NAVIGATION -->
+                    <button type="button" class="close-menu" aria-label="Close Navigation Menu">
+                        &times;
+                    </button>
+
+                    <a href="index.html" class="menuI"> HOME </a>
+                    <a href="about.html" class="menuI"> ABOUT </a>
+                </div>
+
+                <!-- HAMBURGER BUTTON DISPLAYED ON MOBILE AND TABLET SCREENS -->
+                <div class="hamburger-menu">
+                    <button type="button" aria-label="Open Navigation Menu">
+                        <span class="fa fa-bars" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <!-- SECTION: GROUPS THE MAIN CONTENT OF THE PAGE -->
+        <section>
+            <!-- ARTICLE: CONTAINS ONE PIECE OF WRITTEN AND VISUAL CONTENT -->
+            <article>
+                <h1>You have been selected</h1>
+
+                <!-- LAYOUT: THE CSS GRID PUTS THE TEXT BOX AND THE IMAGE SIDE BY SIDE -->
+                <div class="layout">
+                    <div class="text-box">
+                        <div class="popup">
+                            <h2>YOU WON!</h2>
+                            <p>We and our 4,312 partners use cookies to personalize content.</p>
+                            <a class="button" href="bad-ending.html">Accept all</a>
+                            <a class="button" href="bad-ending.html">Manage options</a>
+                        </div>
+                        <p class="real"><b>In real life:</b> Ads and consent pop-ups are built to make Accept all the
+                            easy choice.</p>
+                    </div>
+
+                    <!-- FIGURE: IMAGE AND CAPTION. TO USE YOUR OWN DRAWING, CHANGE THE FILE NAME IN src -->
+                    <figure class="image-box">
+                        <img src="assets/popup.svg" alt="A red pop-up window that says YOU WON with a CLAIM button">
+                        <figcaption>Looks exciting. Is an ad.</figcaption>
+                    </figure>
+                </div>
+
+                <!-- BOTTOM ROW: SMALL DESCRIPTION AND BUTTONS -->
+                <div class="bottom">
+                    <p class="small-box">Managing options takes 4,312 clicks, so it ends here.</p>
+                    <div></div>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <div class="credits">
+                <p>
+                    Copyright Sabrina Rath. SpyMeNot is a response to Shoshana Zuboff's The Age of Surveillance
+                    Capitalism. Nothing you type leaves your browser.
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- JAVASCRIPT FOR THE MENU AND THE GHOST FEATURES (SEE SCRIPT.JS) -->
+    <script src="script.js"></script>
+</body>
+
+</html>
