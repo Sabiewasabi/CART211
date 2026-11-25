@@ -131,6 +131,8 @@ section {
     width: 100%;
     max-height: 16rem;
     /* STOP TALL IMAGES FROM GROWING TOO BIG */
+    object-fit: contain;
+    /* KEEP THE IMAGE'S SHAPE: FIT IT INSIDE THE BOX WITHOUT STRETCHING */
 }
 
 .image-box figcaption {
