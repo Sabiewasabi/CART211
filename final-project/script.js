@@ -3,9 +3,9 @@
 // 3) REMEMBER IT BETWEEN PAGES       4) SHOW IT AGAIN ON LATER PAGES
 
 // ----- LISTS: ADD YOUR OWN WORDS TO ANY LIST -----
-const names = ["Marge Pemberton", "Dax Okonkwo-Lund", "Priya Tumbleweed", "Ottis Quill", "Beatriz Hollowell", "Kofi Brambleton", "Yuki Featherstone", "Winnie Castellano"];
-const cities = ["Dullsville, Nebraska", "Little Wobbleton", "Port Nowhere", "Cheddar Gorge", "Lake Plausible", "Mount Maybe"];
-const jobs = ["lighthouse inspector", "professional cloud namer", "competitive napper", "retired mime", "part-time wizard", "yodeling coach"];
+const names = ["Marge Pemberton", "Dax Okonkwo-Lund", "Priya Tumbleweed", "Ottis Quill", "Beatriz Hollowell", "Kofi Brambleton", "Yuki Featherstone", "Winnie Castellano", "Tim Hortons", "Adelina Paccinoma", "Tom Looming"];
+const cities = ["Dullsville, Nebraska", "Little Wobbleton", "Port Nowhere", "Cheddar Gorge", "Lake Plausible", "Mount Maybe", "Old City", "MargoLand"];
+const jobs = ["lighthouse inspector", "professional cloud namer", "competitive napper", "retired mime", "part-time wizard", "yodeling coach", "Bee keeper", "Cat whisperer", "Pillow fight champion"];
 
 // PICKS ONE RANDOM ITEM FROM A LIST
 function pick(list) {
