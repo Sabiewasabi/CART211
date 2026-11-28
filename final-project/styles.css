@@ -141,6 +141,11 @@ section {
     /* KEEP THE IMAGE'S SHAPE: FIT IT INSIDE THE BOX WITHOUT STRETCHING */
 }
 
+/* ON THE BAD ENDING, MAKE A WHITE IMAGE BACKGROUND DISAPPEAR AGAINST THE RED GLOW */
+.glow .image-box img {
+    mix-blend-mode: multiply;
+}
+
 .image-box figcaption {
     font-size: 0.85rem;
     color: #6b6670;
